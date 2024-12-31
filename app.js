@@ -34,6 +34,8 @@ app.get('/', (req, res) => {
 
 // Middleware for product routes
 app.use('/products', pRouter);
+//to find images
+app.use('/images', express.static('public/images'));
 
 // // Login route (authentication)
 // app.post('/login', (req, res) => {
